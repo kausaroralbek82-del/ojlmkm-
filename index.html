@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-sans text-blue-950 overflow-x-hidden bg-slate-200">
+    <section class="py-10">
+      <div class="max-w-7xl mx-auto px-10">
+        <nav class="flex items-center">
+          <img src="images/logo.svg" />
+
+          <ul class="flex gap-8 ml-12 font-medium">
+           
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+          </ul>
+
+          <div class="ml-auto">
+            Login
+            <button
+              class="bg-green-300 text-white px-6 py-2 rounded-full shadow"
+            >
+              Sign Up
+            </button>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-10 py-20">
+      <div class="flex items-center gap-20">
+        <div class="w-1/2">
+          <h3 class="text-4xl font-bold mb-6">More than just shorter links</h3>
+
+          <p class="text-gray-500 mb-8">
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+
+          <button class="bg-green-300 text-white px-6 py-2 rounded-full shadow">
+            Get Started
+          </button>
+        </div>
+
+        <div class="w-1/2">
+          <img src="images/illustration-working.svg" />
+        </div>
+      </div>
+    </section>
+    <section class="flex items-center justify-center bg-purple-900 px-10 py-10">
+      <div class="shortener-box">
+        <input
+          class="bg-white px-6 py-2 rounded-xl shadow text-red-900 pr-[600px]"
+          id="linkInput"
+          type="text"
+          placeholder="Shorten a link here..."
+        />
+        <button
+          class="required:full bg-green-300 text-white px-6 py-2 rounded-xl shadow"
+        >
+          Shorten It!
+        </button>
+      </div>
+    </section>
+    <section class="flex flex-col items-center justify-center py-10">
+      <h2 class="font-bold text-2xl">Advanced Statistics</h2>
+      <p class="text-sm opacity-70">
+        Track how your links are performing across the web with <br />
+        our advanced statistics dashboard.
+      </p>
+    </section>
+    <section
+      class="relative flex justify-center items-start gap-10 px-10 mt-20"
+    >
+      <div class="absolute top-24 left-0 right-0 h-2 bg-cyan-400"></div>
+
+      <div class="bg-white p-8 rounded-lg w-72 relative">
+        <div
+          class="bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center absolute -top-8"
+        >
+          <img src="images/icon-brand-recognition.svg" />
+        </div>
+        <h2 class="font-bold mt-10 mb-3">Brand Recognition</h2>
+        <p class="text-sm opacity-70">
+          Boost your brand recognition with each click. Generic links don’t mean
+          a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-lg w-72 relative mt-12">
+        <div
+          class="bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center absolute -top-8"
+        >
+          <img src="images/icon-detailed-records.svg" />
+        </div>
+        <h2 class="font-bold mt-10 mb-3">Detailed Records</h2>
+        <p class="text-sm opacity-70">
+          Gain insights into who is clicking your links. Knowing when and where
+          people engage with your content helps inform better decisions.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-lg w-72 relative mt-24">
+        <div
+          class="bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center absolute -top-8"
+        >
+          <img src="images/icon-fully-customizable.svg" />
+        </div>
+        <h2 class="font-bold mt-10 mb-3">Fully Customizable</h2>
+        <p class="text-sm opacity-70">
+          Improve brand awareness and content discoverability through
+          customizable links, supercharging audience engagement.
+        </p>
+      </div>
+    </section>
+    <section
+      class="flex items-center justify-center flex-col bg-purple-900 py-10 gap-2"
+    >
+      <h2 class="font-bold text-2xl text-white">Boost your links today</h2>
+      <button class="bg-green-300 text-white px-6 py-2 rounded-full shadow">
+        Get Started
+      </button>
+    </section>
+    <section class="bg-slate-950 py-5">
+      <div class="max-w-7xl mx-auto px-10 grid grid-cols-4 gap-10 items-start">
+        <div class="space-y-10">
+          <img src="images/logo.svg" class="brightness-200" />
+
+          
+        </div>
+
+        <div class="space-y-3 text-gray-300">
+          <p class="hover:text-orange-500 cursor-pointer font-bold">Features</p>
+          <p class="hover:text-orange-500 cursor-pointer">Link shortening</p>
+          <p class="hover:text-orange-500 cursor-pointer">Products</p>
+          <p class="hover:text-orange-500 cursor-pointer">About Us</p>
+        </div>
+         <div class="space-y-3 text-gray-300">
+          <p class="hover:text-orange-500 cursor-pointer font-bold">Resources</p>
+          <p class="hover:text-orange-500 cursor-pointer">Link shortening</p>
+          <p class="hover:text-orange-500 cursor-pointer">Products</p>
+          <p class="hover:text-orange-500 cursor-pointer">About Us</p>
+        </div>
+         <div class="space-y-3 text-gray-300">
+          <p class="hover:text-orange-500 cursor-pointer font-bold text-md">Company</p>
+          <p class="hover:text-orange-500 cursor-pointer">Link shortening</p>
+          <p class="hover:text-orange-500 cursor-pointer">Products</p>
+          <p class="hover:text-orange-500 cursor-pointer">About Us</p>
+        </div>
+
+       
+      <div class="flex gap-4">
+            <img src="images/icon-facebook.svg" />
+            <img src="images/icon-twitter.svg" />
+            <img src="images/icon-pinterest.svg" />
+            <img src="images/icon-instagram.svg" />
+          </div>
+    </section>
+    <!-- Features
+  Pricing
+  Resources
+
+  Login
+  Sign Up
+
+  More than just shorter links
+
+  Build your brand’s recognition and get detailed insights 
+  on how your links are performing.
+
+  Get Started
+  
+  Shorten a link here...
+
+  Shorten It!
+
+  Advanced Statistics
+
+  Track how your links are performing across the web with our 
+  advanced statistics dashboard.
+
+  Brand Recognition
+
+  Boost your brand recognition with each click. Generic links don’t 
+  mean a thing. Branded links help instil confidence in your content.
+
+  Detailed Records
+
+  Gain insights into who is clicking your links. Knowing when and where 
+  people engage with your content helps inform better decisions.
+
+  Fully Customizable
+
+  Improve brand awareness and content discoverability through customizable 
+  links, supercharging audience engagement.
+
+  Boost your links today
+
+  Get Started
+
+  Features
+
+  Link Shortening
+  Branded Links
+  Analytics
+
+  Resources
+
+  Blog
+  Developers
+  Support
+
+  Company
+
+  About
+  Our Team
+  Careers
+  Contact
+   -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
